@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Email</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        *{
+            margin: 0%;
+        }
+      
+        .email{
+            height: 10sss0vh;
+            width: 97%;
+            border: solid 3px;
+        }
+        .a{
+            height: 30px;
+            width: 98%;
+            margin-left: 4px;
+        
+        }
+        .b{
+            height: 40px;
+            width: 98%;
+            margin-left: 4px;
+        }
+        .c{
+            height: 50vh;
+            width: 98%;
+            margin-left: 4px;
+            text-align: left;
+    
+        }
+        button{
+            position: absolute;
+            height: 30px;
+            margin-left: 10px;
+            bottom: 5px;
+            margin-left: 88%;
+            top: 99.5vh;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: grey;
+        }
+        .e{
+            height: 20px;
+            width: 20px;
+        }
+        .c{
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .im{
+            height: 113.7vh;
+            width: 100%;
+            background-color: rgb(250, 206, 212);
+            background-size: 100%100%;
+            
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="im">
+        <br><h2>Compose email</h2>
+        <div class="email">
+            <form action="/email_send" method="post">
+                <br><b>To</b> <br><input type="email" name="a" required class="a"><br><br>
+                <b>Subject</b> <input type="text" name="b" required class="b"><br><br>
+                <b>Message</b> <textarea type="text" name="c" class="c"></textarea><br><br>
+                <b>Attachments</b> <input type="file" name="d" class="d">
+                <button type="submit">send mail</button>
+                <span>send a copy of my mail</span><input type="checkbox" name="d" class="e"><br>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
